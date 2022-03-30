@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import BatchingRenders from './BatchingRenders';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <div className='app'>
+      <h1>Hello World</h1>
+      <h2>
+        This is{' '}
+        <a href='https://reactjs.org/blog/2022/03/29/react-v18.html'>
+          React 18
         </a>
-      </header>
+      </h2>
+      {/* BatchingRenders Component */}
+      <BatchingRenders />
     </div>
   );
 }
